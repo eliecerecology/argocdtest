@@ -6,7 +6,7 @@ spec:
   selector:
     app: myOllamaApp
   ports:
-  - port: 11434
+  - port: 8080
     protocol: TCP
-    targetPort: 11434
+    targetPort: 8080
   

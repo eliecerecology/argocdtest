@@ -16,4 +16,4 @@ spec:
       - name: myOllamaApp
         image: ollama/ollama
         ports:
-        - containerPort: 11434
+        - containerPort: 8080
