@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myOllamaApp
+spec:
+  selector:
+    matchLabels:
+      app: myOllamaApp
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: myOllamaApp
+    spec:
+      containers:
+      - name: ollama
+        image: ollama/ollama-app:latest # Update with the correct Ollama image
+        ports:
+        - containerPort: 11434
