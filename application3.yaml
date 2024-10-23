@@ -1,4 +1,4 @@
-apiVersion: v1test
+apiVersion:  argoproj.io/v1nginx
 kind: Application
 metadata:
   name: my_test_application_nginx
