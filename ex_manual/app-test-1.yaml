@@ -38,6 +38,7 @@ spec:
   - name:  http
     port:  80
     targetPort: 80
+    nodeport: 30002
     protocol: TCP
   selector:
     app: app-test-1
@@ -51,11 +52,9 @@ spec:
   rules:
     http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
+      - pathType: Prefix
+      backend:
           service:
             name: app-test-1-svc 
             port:
               number: 80
-  
